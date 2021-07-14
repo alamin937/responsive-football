@@ -70,13 +70,76 @@ player-area
     text-align: justify;
     color:#6C6C6C;
     margin:0;
+    overflow: hidden;
 }
 .players{
     box-shadow: 10px 10px 30px grey;
     padding:15px;
     border-radius: 10px;
 }
-/* logo-area */
+/*.................
+ bonus-area
+ ............ */
+.dream{
+    background-image: url(images/back.jpg);
+    background-repeat: no-repeat;
+    height:700px;
+    background-size: cover;
+    margin-top:50px;
+    position:relative;
+}
+.dream h2{
+    color:white;
+    width:700px;
+    text-align: center;
+    margin:0 auto;
+    position:absolute;
+    top:150px;
+    left:150px;
+    font-size: 50px;
+}
+.dream p{
+    color:yellow;
+    margin:0 auto;
+    position:absolute;
+    top:250px;
+    left:200px;
+    font-size: 40px;
+}
+span{
+    color:orange;
+}
+/* ...................
+2nd part bonus area
+..................... */
+.love{
+    width:90%;
+    margin:0 auto;
+    box-shadow: 10px 10px 40px grey;
+    padding:20px;
+    margin-top:50px;
+}
+.love h1{
+    text-align: center;
+    background-color: orange;
+    width:100px;
+    margin:0 auto;
+    padding:10px;
+    border-radius: 10px;
+}
+/* .................
+icon area 
+.............. */
+.icon-area a{
+    font-size: 25px;
+    margin-left: 20px;
+}
+.icon-area{
+   text-align: center;
+}
+/* ..............
+logo-area 
+......................*/
 .logo-area{
     width:350px;
     margin:0 auto;
@@ -85,3 +148,10 @@ player-area
 .logo-area img{
     width:100%;
 }
+/*...................
+ footer-area 
+ ...................*/
+ .footer-area{
+     text-align: center;
+     color:red;
+ }
