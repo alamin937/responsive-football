@@ -1,0 +1,87 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+}
+/* ............
+header-area css
+................ */
+.banner-area img{
+    width:100%;
+}
+.banner-area{
+    width:456px;
+}
+.header-area{
+    background-color: #2D25A0;
+}
+.text-area h2{
+    margin:0;
+    font-size: 64px;
+    color:white;
+}
+.width-area{
+    width:70%;
+    display: flex;
+    align-items: center;
+    padding:30px;
+    margin:0 auto;
+    justify-content: space-between;
+}
+.text-area button{
+    background-color: #E02C6D;
+    padding:15px;
+    color:white;
+    border-radius: 3px;
+    border:1px solid grey;
+}
+button:hover{
+    background-color: aqua;
+}
+/* ....................
+player-area
+........................... */
+.players{
+    width:330px;
+}
+.img-area{
+    width:320px;
+}
+.img-area img{
+    width:100%;
+    border-radius: 8px;
+}
+.details{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width:70%;
+    margin:0 auto;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+}
+.players-detail-area{
+    margin-top:60px;
+}
+.players h2{
+    margin:0;
+    margin-top:15px;
+}
+.players p{
+    text-align: justify;
+    color:#6C6C6C;
+    margin:0;
+}
+.players{
+    box-shadow: 10px 10px 30px grey;
+    padding:15px;
+    border-radius: 10px;
+}
+/* logo-area */
+.logo-area{
+    width:350px;
+    margin:0 auto;
+    margin-top:80px;
+}
+.logo-area img{
+    width:100%;
+}
