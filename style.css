@@ -28,16 +28,44 @@ header-area css
     margin:0 auto;
     justify-content: space-between;
 }
-.text-area button{
-    background-color: #E02C6D;
-    padding:15px;
-    color:white;
-    border-radius: 3px;
-    border:1px solid grey;
-}
-button:hover{
-    background-color: aqua;
-}
+.button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    padding: 15px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\279C';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 /* ....................
 player-area
 ........................... */
@@ -70,7 +98,6 @@ player-area
     text-align: justify;
     color:#6C6C6C;
     margin:0;
-    overflow: hidden;
 }
 .players{
     box-shadow: 10px 10px 30px grey;
@@ -154,4 +181,51 @@ logo-area
  .footer-area{
      text-align: center;
      color:red;
+ }
+ /* ...................
+    phone screen.
+ .......................  */
+ @media only screen and (max-width:688px) {
+     .width-area{
+         flex-direction: column;
+     }
+     .details{
+         grid-template-columns: repeat(1,1fr);
+     }
+     .players{
+         margin-right: 50px;
+     }
+     .dream h2{
+         width:0;
+         font-size: 30px;
+         position:absolute;
+         left:50px;
+     }
+     .dream p{
+         font-size: 15px;
+         position:absolute;
+         top:300px;
+         left:50px;
+     }
+     .banner-area{
+         width:300px;
+     }
+     .banner-area img{
+         width:100%;
+     }
+     .text-area h2{
+         font-size: 50px;
+     }
+     .img-area{
+         width:200px;
+     }
+     .img-area img{
+         width:100%;
+     }
+     .players p{
+         font-size: 15px;
+     }
+     .players{
+         width:200px;
+     }
  }
